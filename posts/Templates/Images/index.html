@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+</head>
+<body>
+    <form action="{% url 'index' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="images" multiple/>
+        <input type="submit" value="upload images">
+    </form>
+</body>
+</html>
